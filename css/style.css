@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #03C4EB;
+  color: #ffffff !important;
   transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: #fff !important;
   outline: none;
   text-decoration: none;
 }
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #03C4EB;
+  background: rgba(255, 128, 0, 0.75);
   color: #fff;
 }
 
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center fixed;
+  background: url(../img/background.png) top center fixed;
   background-size: cover;
 }
 
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-container {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 255, 0.6);
   display: table-cell;
   margin: 0;
   padding: 0;
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #999;
+  color: #fff;
   margin-bottom: 50px;
 }
 
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-#hero .actions a {
+.actions a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -155,39 +155,40 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
 
-#hero .btn-get-started {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+.btn-get-started {
+  background: #ff8000;
+  border: 2px solid #ff8000;
+  border-radius: 5px !important;
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
   background: none;
-  border: 2px solid #fff;
+}
+
+.btn-services {
+  background: #ff8000;
+  border: 2px solid #ff8000;
+  border-radius: 5px !important;
   color: #fff;
 }
 
-#hero .btn-services {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#hero .btn-services:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+.btn-services:hover {
+  background: none;
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #111;
-  padding: 20px 0;
-  height: 90px;
+  background: #ff8000;
+  padding: 0;
+  height: 80px;
 }
 
 #header #logo {
   float: left;
+  padding: 25px 0;
 }
 
 #header #logo h1 {
@@ -212,9 +213,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #header {
-    height: 80px;
-  }
   #header #logo h1 {
     font-size: 26px;
   }
@@ -224,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .is-sticky #header {
-  background: rgba(0, 0, 0, 0.85);
+  background: #ff8000;
 }
 
 /*--------------------------------------------------------------
@@ -236,7 +234,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   list-style: none;
 }
-
+.nav-menu{
+}
 .nav-menu ul {
   position: absolute;
   display: none;
@@ -289,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Meu Container */
 #nav-menu-container {
   float: right;
-  margin: 5px 0;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -300,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 10px 15px;
+  padding: 30px 15px;
   text-decoration: none;
   display: inline-block;
   color: #fff;
@@ -311,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #03C4EB;
+  background: rgba(0, 0, 0, 0.08) !important;
 }
 
 .nav-menu ul {
@@ -469,11 +468,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-title-divider {
-  width: 50px;
+  width: 60px;
   height: 3px;
-  background: #03C4EB;
+  background: #0000ff;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Get Started Section
@@ -483,8 +482,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
+#about a:hover, a:active, a:focus {
+  color: #ff8000 !important;
+  outline: none;
+  text-decoration: none;
+}
+
 #about .about-container {
-  background: url(../img/about-img.jpg) left top no-repeat;
+  background: url(../img/vision.jpeg) left top no-repeat;
 }
 
 #about .about-content {
@@ -503,6 +508,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-text:last-child {
   margin-bottom: 0;
+}
+
+/* The Process
+--------------------------------*/
+.smpl-step-step{
+  padding: 10px 40px;
+}
+.smpl-step-step h3{
+  padding: 5px;
+  margin: 0;
+}
+.smpl-step-icon{
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  display: block;
+  background: #ff8000;
+  border-radius: 40px;
+}
+.smpl-step-icon h1{
+  font-size: 40px;
+  padding-top: 12px;
+  color: #ffffff;
+}
+.smpl-step-info{
+  padding: 5px;
 }
 
 /* Services Section
@@ -558,7 +590,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -785,7 +817,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
   font-size: 32px;
-  color: #03C4EB;
+  color: #ff8000;
   float: left;
 }
 
@@ -796,7 +828,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form #sendmessage {
   color: #03C4EB;
-  border: 1px solid #03C4EB;
+  border: 1px solid #ff8000;
   display: none;
   text-align: center;
   padding: 15px;
@@ -832,15 +864,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #03C4EB;
-  border: 0;
-  padding: 10px 24px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #ff8000;
+  border: 2px solid #ff8000;
+  border-radius: 5px !important;
   color: #fff;
+  padding: 8px 20px;
+  border-radius: 2px;
   transition: 0.4s;
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #25d8fc;
+  background: none;
+  color: #ff8000;
 }
 
 /*--------------------------------------------------------------
