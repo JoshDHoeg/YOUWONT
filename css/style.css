@@ -483,7 +483,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container {
-  background: url(../img/vision.jpeg) left top no-repeat;
+  background: url(../img/funny-1.gif) left top no-repeat;
 }
 
 #about .about-content {
@@ -508,8 +508,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* The Process
 --------------------------------*/
 #process {
-  padding: 100px 0;
-  background: url(../img/process_bg.jpg) fixed center center;
+  padding: 120px 0;
+
   background-size: cover;
 }
 #process .smpl-step-step{
@@ -520,7 +520,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   padding: 5px;
   margin: 0;
-  color: #ffffff;
+  color: #000000;
 }
 #process  .smpl-step-icon{
   text-align: center;
@@ -538,16 +538,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #process  .smpl-step-info{
   padding: 5px;
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
 }
 
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/funny.gif) fixed center center;
   background-size: cover;
-  padding: 180px 0;
+  padding: 200px 0;
 }
 
 #subscribe #mc-embedded-subscribe-form {
@@ -596,6 +596,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   #subscribe input{
     float: none !important;
     margin: 10px auto;
+  }
+  #logo_placeholder{
+    font-size: 54px !important;
+  }
+  #subscribe{
+    padding: 0px;
   }
 }
 
